@@ -13,8 +13,11 @@
  * @param {String} type
  * @returns {boolean} True if value matches type
  */
-function isTypeOf(value, type) {
-  if (type === Array.isArray() && Array.isArray(value)) return true;
-  return type === typeof value;
-}
+const isTypeOf = function (valueToBeChecked, type) {
+  if (type === "array") {
+    return Array.isArray(valueToBeChecked);
+  }
+  return type === typeof valueToBeChecked;
+};
+
 export default isTypeOf;

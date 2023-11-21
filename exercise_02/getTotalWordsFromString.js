@@ -10,9 +10,6 @@
  * @returns {number} Returns the total number of words
  */
 function getTotalWordsFromString(sentence) {
-  let words = sentence.split(/\s+/);
-  let wordFilter = words.filter((word) => word.length > 0);
-  return wordFilter.length;
+  return sentence.split("").length;
 }
-
 export default getTotalWordsFromString;
