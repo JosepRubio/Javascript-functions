@@ -6,3 +6,18 @@
  * input: boolean (type)
  * output:
  */
+
+/**
+ *
+ * @param {Array,Number,String,Boolean} value
+ * @param {String} type
+ * @returns {boolean} True if value matches type
+ */
+const isTypeOf = function (valueToBeChecked, type) {
+  if (type === "array") {
+    return Array.isArray(valueToBeChecked);
+  }
+  return type === typeof valueToBeChecked;
+};
+
+export default isTypeOf;
