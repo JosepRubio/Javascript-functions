@@ -6,12 +6,12 @@
  */
 
 /**
- * 
- * @param {number} number 
- * @param {number} threshold 
+ *
+ * @param {number} number
+ * @param {number} threshold
  * @returns {boolean} Returns true if the number is greater than the threshold
  */
 function isGreaterThan(number, threshold) {
   return number > threshold;
-};
+}
 export default isGreaterThan;

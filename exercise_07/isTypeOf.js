@@ -8,9 +8,9 @@
  */
 
 /**
- * 
- * @param {Array,Number,String,Boolean} value 
- * @param {String} type 
+ *
+ * @param {Array,Number,String,Boolean} value
+ * @param {String} type
  * @returns {boolean} True if value matches type
  */
 function isTypeOf(value, type) {
