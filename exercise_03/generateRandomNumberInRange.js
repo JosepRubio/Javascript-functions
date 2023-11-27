@@ -5,11 +5,12 @@
  */
 /**
  *
- * @param {number} limit
- * @returns {number} Returns a random number
+ * @param {number} number Min limit to generate
+ * @param {number} numberLimit Max limit to generate
+ * @returns {number}
  */
-function generateRandomNumberInRange(limit) {
-  let randomNumber = Math.round(Math.random() * limit);
+function generateRandomNumberInRange(number, numberLimit) {
+  const randomNumber = Math.random() * (numberLimit - number) + number;
   return randomNumber;
 }
 export default generateRandomNumberInRange;
