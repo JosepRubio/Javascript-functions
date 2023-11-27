@@ -16,3 +16,19 @@
  * CASE #2 * input: "This is short one."
  * output: "this is short one."
  */
+
+import getTotalWordsFromString from "../exercise_02/getTotalWordsFromString.js";
+import isGreaterThan from "../exercise_04/isGreaterThan.js";
+
+const formatStringByWordsLength = function (sentence) {
+  const totalwords = getTotalWordsFromString(sentence);
+  const outOfLimit = isGreaterThan(5, totalwords);
+
+  if (outOfLimit) {
+    return sentence.toUpperCase();
+  }
+
+  return sentence.toLowerCase();
+};
+
+export default formatStringByWordsLength;
