@@ -17,3 +17,20 @@
  * input: []
  * output: ""
  */
+
+import checkCollectionHasElements from "../exercise_06/checkCollectionHasElements.js";
+/**
+ * CASE #3
+ * @param {array} collection
+ * @return {string} string
+ */
+
+const transformCollectionToString = function (collection) {
+  const arrayOnCollection = Array.isArray(collection);
+  if (arrayOnCollection && collection.length > 0) {
+    return collection.join(" | ");
+  }
+  return "";
+};
+
+export default transformCollectionToString;

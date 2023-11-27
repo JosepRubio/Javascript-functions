@@ -20,7 +20,6 @@
  * output: "Sum with value 70 isd left in 30 from number 100"
  */
 import generateRandomNumberInRange from "../exercise_03/generateRandomNumberInRange.js";
-import isGreaterThan from "../exercise_04/isGreaterThan.js";
 import getDistanceFromThreshold from "../exercise_01/getDistanceFromThreshold.js";
 
 const getDistanceMessageFromSumTo100 = function (value) {
