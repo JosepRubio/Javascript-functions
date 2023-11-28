@@ -1,3 +1,4 @@
+import checkCollectionHasElements from "../exercise_06/checkCollectionHasElements.js";
 /**
  * Write JS function "transformCollectionToString" to transform collection into string
     - if array has elements, then return array as string, joined by '|' (pipe character)
@@ -18,7 +19,6 @@
  * output: ""
  */
 
-import checkCollectionHasElements from "../exercise_06/checkCollectionHasElements.js";
 /**
  * CASE #3
  * @param {array} collection
